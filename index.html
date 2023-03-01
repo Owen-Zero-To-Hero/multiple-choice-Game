@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Game</title>
+    <title>Adventure Game</title>
   </head>
   <body>
-    <h1>Welcome to the Game!</h1>
-    <div id="game"></div>
+    <h1>Adventure Game</h1>
+    <div id="quest">
+      <h2 id="quest-name"></h2>
+      <p id="quest-description"></p>
+      <div id="options">
+        <button id="option-0"></button>
+        <button id="option-1"></button>
+        <button id="option-2"></button>
+        <button id="option-3"></button>
+      </div>
+      <div id="health-bars">
+        <div>
+          <h3>Your Health</h3>
+          <div class="health-bar" id="player-health-bar"></div>
+        </div>
+        <div>
+          <h3>Monster Health</h3>
+          <div class="health-bar" id="monster-health-bar"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./game.js"></script>
+    <script type="module" src="./display.js"></script>
   </body>
-  <script src="game.js"></script>
 </html>
